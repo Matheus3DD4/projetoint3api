@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  height: 50vh;
+  background-color: #13212b;
+  /* background-image: url(link da imagemmm); */
+  font-family: "Sansita", sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  color: #ffe917;
+}
+
+.h2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 18px;
+  color: #ffe917;
+  margin: 0px;
+}
+
+h3 {
+  margin: 0px;
+}
+
+.h3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 0px;
+  margin-top: 0px;
+  font-size: 18px;
+  color: #ffe917;
+}
+
+#app {
+  height: 100%;
+  /* display: grid;
+  grid-template-columns: 100% 1fr;
+  grid-template-rows: 20% auto;
+  grid-template-areas:
+    "header"
+    "editoras"; */
+}
+
+#capa {
+  grid-area: capa;
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+}
+
+/* #editoras {
+  display: flex;
+  grid-area: editoras;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+} */
+
+.imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.imgedit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.blocklivros {
+  width: 250px;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 5px;
+  background-color: #1f3544;
+}
+
+.blocklivros :hover {
+  border: solid #1f3544 3px;
+  padding-bottom: 0px;
+}
+
+.links:hover {
+  background-color: #13212b;
+  border-bottom: 3px solid #1f3544;
+  cursor: pointer;
+}
+
+.editora.imagem {
+  margin: 0 auto;
+}
+
+icon {
+  padding-right: 0%;
+}
+
+.logo {
+  width: 3em;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
