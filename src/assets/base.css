@@ -1,30 +1,60 @@
 body {
+  background: linear-gradient(-45deg, #000000, #1f3544, #29383d, #388875);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
   margin: 0;
-  height: 50vh;
-  background-color: #13212b;
-  /* background-image: url(link da imagemmm); */
+  height: 100vh;
   font-family: "Sansita", sans-serif;
 }
 
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
 h1 {
   font-size: 50px;
   color: #ffe917;
 }
-
-.h2 {
+.mensagem {
+  background-color: white;
+  border-radius: 20px;
+  margin: 50px;
+  padding: 50px;
+}
+p{
+  width: 89%;
+  font-size: 20px;
+}
+h2 {
   display: flex;
   justify-content: flex-start;
+  padding: 9px;
   align-items: center;
-  font-size: 18px;
-  color: #ffe917;
+  background-color: #1f3544;
+  font-size: 35px;
+  color: #ffffff;
   margin: 0px;
-}
 
+}
+h4 {
+  font-size: 50px;
+  color: #1f3544;
+  padding-left: 20px;
+  border-left: 20px solid;
+  margin: 32px 38px;
+}
 h3 {
   margin: 0px;
 }
 
-.h3 {
+h3 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -76,23 +106,9 @@ h3 {
 }
 
 .blocklivros {
-  width: 250px;
-  border-radius: 10px;
-  padding: 8px;
-  margin: 5px;
-  background-color: #1f3544;
+    margin: 11px;
 }
 
-.blocklivros :hover {
-  border: solid #1f3544 3px;
-  padding-bottom: 0px;
-}
-
-.links:hover {
-  background-color: #13212b;
-  border-bottom: 3px solid #1f3544;
-  cursor: pointer;
-}
 
 .editora.imagem {
   margin: 0 auto;

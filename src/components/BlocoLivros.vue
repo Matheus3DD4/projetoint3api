@@ -18,20 +18,32 @@ export default {
   <article class="blocklivros">
     <RouterLink to="/livro">
       <div class="imgedit">
-        <img :src="imagem" width="180" height="240" />
+        <img :src="imagem"/>
       </div>
-      <div class="h2">
-        <h2>{{ nome }}</h2>
-      </div>
-      <div class="h3">
-        <h3>{{ ano }}</h3>
-      </div>
+      <!--
+        <div class="h2">
+          <h2>{{ nome }}</h2>
+        </div>
+        <div class="h3">
+          <h3>{{ ano }}</h3>
+        </div>x
+      -->
     </RouterLink>
   </article>
 </template>
 
 <style scoped>
 .blocklivros {
-  width: 18%;
+  width: 13%;
+}
+.imgedit img{
+  border-radius: 15px;
+  width: 180px;
+  height: 256px;
+}
+.imgedit img:hover {
+  widows: 200px;
+  height: 250px;
+  transition: 0.3s all ease;
 }
 </style>
