@@ -19,8 +19,8 @@ export default {
 </script>
 <template>
   <section class="mensagem">
-    <h2>matheus marques gobetti</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro enim, ut facilis ullam inventore repellat maiores assumenda iusto tempore dicta labore alias quia, odit quasi rerum. Dolore ullam reiciendis explicabo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum tenetur adipisci nulla. Impedit provident quia nemo exercitationem suscipit cupiditate mollitia necessitatibus quod veritatis quasi, earum perferendis repellat laudantium deserunt quo. </p>
+    <h2>Matheus Marques Gobetti</h2>
+    <p class="home">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro enim, ut facilis ullam inventore repellat maiores assumenda iusto tempore dicta labore alias quia, odit quasi rerum. Dolore ullam reiciendis explicabo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum tenetur adipisci nulla. Impedit provident quia nemo exercitationem suscipit cupiditate mollitia necessitatibus quod veritatis quasi, earum perferendis repellat laudantium deserunt quo. </p>
   </section>
   <section id="editoras" v-for="list of lists" :key="list.id">
     <h4>
@@ -45,7 +45,6 @@ export default {
   flex-direction: column;
   border-top: 10px solid #ffe917;
   width: 100%;
-  background-color: white;
 }
 .livros {
     /* align-items: center; */
@@ -53,5 +52,9 @@ export default {
     flex-wrap: wrap;
     /* width: 100%; */
     justify-content: center;
+}
+
+.home {
+  color: white;
 }
 </style>

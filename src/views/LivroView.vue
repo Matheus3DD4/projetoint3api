@@ -47,7 +47,7 @@ export default {};
   display: flex;
 }
 .divlivro{
-  background-color: white;
+  background-color: rgba(251, 248, 49, 0.166);
     border-radius: 20px;
     height: 62vh;
     width: 66%;
@@ -57,7 +57,7 @@ export default {};
 .poster {
   height: 62vh;
     width: 28%;
-    border: 3px solid #ffe917;
+    border: 3px solid #f2de26;
     border-radius: 20px;
     background-color: #29383d;
 }

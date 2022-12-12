@@ -11,24 +11,24 @@ export default {
 <template>
   <header>
     <div>
-      <h1>J<strong>B</strong>C</h1>
+      <h1>Judge a <strong>Book</strong> by its Cover</h1>
     </div>
     <div id="header">
       <span>
         <Icon icon="entypo:home" :inline="true" />
-        <RouterLink class="links" to="/">Início</RouterLink>
+        <RouterLink class="links" to="/">Home</RouterLink>
       </span>
       <span>
         <Icon icon="charm:search" :inline="true" />
-        <RouterLink class="links" to="/livros">Buscar</RouterLink>
+        <RouterLink class="links" to="/livros">Search</RouterLink>
       </span>
       <span>
         <Icon icon="clarity:library-line" :inline="true" />
-        <RouterLink class="links" to="/biblioteca">Sua Biblioteca</RouterLink>
+        <RouterLink class="links" to="/biblioteca">Your Library</RouterLink>
       </span>
       <span>
         <Icon icon="tabler:playlist-add" :inline="true" />
-        <RouterLink class="links" to="/categorias">Livros Curtidos</RouterLink>
+        <RouterLink class="links" to="/categorias">Liked Books</RouterLink>
       </span>
     </div>
   </header>
@@ -42,6 +42,7 @@ export default {
 }
 svg{
   margin-right: 10px;
+  color: white;
 }
 header span:hover {
   border-bottom: 3px solid #ffe917;
@@ -55,11 +56,11 @@ header a:hover{
 }
 header {
     padding: 22px;
-    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 20px 35px rgb(0, 0, 0);
     height: 5vh;
     background-color: #1f3544;
     font-size: 1.6rem;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.209);
     display: flex;
     align-items: center;
     justify-content: space-between;
