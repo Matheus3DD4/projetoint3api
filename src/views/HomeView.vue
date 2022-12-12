@@ -30,7 +30,7 @@ export default {
       <BlocoLivros
         v-for="book of list.books"
         :key="book.book_uri"
-        :imagem="book.book_image"
+        :book="book"
         />
         <!--
           :nome="book.title"

@@ -15,9 +15,10 @@ const router = createRouter({
       component: () => import("../views/BibliotecaView.vue"),
     },
     {
-      path: "/livro",
+      path: "/livro/:id",
       name: "livro",
       component: () => import("../views/LivroView.vue"),
+      props: true,
     },
   ],
 });

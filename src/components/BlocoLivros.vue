@@ -9,16 +9,16 @@ export default {
       type: String,
     },
     ano: String,
-    imagem: String,
+    book: Object,
   },
   components: { RouterLink },
 };
 </script>
 <template>
   <article class="blocklivros">
-    <RouterLink to="/livro">
+    <RouterLink :to="`/livro/${book.book_uri.split('/')[3]}`">
       <div class="imgedit">
-        <img :src="imagem"/>
+        <img :src="book.book_image" />
       </div>
       <!--
         <div class="h2">
@@ -36,7 +36,7 @@ export default {
 .blocklivros {
   width: 13%;
 }
-.imgedit img{
+.imgedit img {
   border-radius: 15px;
   width: 180px;
   height: 256px;
